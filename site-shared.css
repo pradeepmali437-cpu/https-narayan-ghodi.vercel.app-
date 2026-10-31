@@ -1,0 +1,30 @@
+/* Shared site-wide header and footer. Edit this file for all pages. */
+#nm-site-header,#nm-site-footer{font-family:Arial,Helvetica,sans-serif;box-sizing:border-box}#nm-site-header *,#nm-site-footer *{box-sizing:border-box}
+#nm-site-header{position:relative;z-index:100;background:#fffaf1;color:#29241e;border-bottom:1px solid #e9ddcb}
+#nm-site-header .nm-nav{max-width:1320px;margin:auto;padding:12px 25px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+#nm-site-header .nm-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#28221d;min-width:0;font-family:Georgia,serif;font-size:21px;font-weight:700;line-height:1.15}
+#nm-site-header .nm-logo{width:54px;height:54px;object-fit:contain;flex:none}
+#nm-site-header .nm-brand small{display:block;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.3px;font-weight:500;margin-top:5px;color:#716451}
+#nm-site-header .nm-brand small span{color:#986b36}
+#nm-site-header .nm-links{display:flex;align-items:center;gap:19px}
+#nm-site-header .nm-links>a,#nm-site-header .nm-dropdown>summary{font:600 14px Arial,sans-serif;text-decoration:none;color:#302b27;cursor:pointer;white-space:nowrap}
+#nm-site-header .nm-links>a:hover,#nm-site-header .nm-dropdown a:hover{color:#a47335}
+#nm-site-header .nm-dropdown{position:relative}
+#nm-site-header .nm-dropdown>summary{list-style:none}
+#nm-site-header .nm-dropdown>summary::-webkit-details-marker{display:none}
+#nm-site-header .nm-dropdown>summary:after{content:' ▾';font-size:12px}
+#nm-site-header .nm-menu{position:absolute;top:100%;left:0;min-width:220px;background:#fffaf1;box-shadow:0 12px 28px #0002;border:1px solid #eadbc5;padding:9px;border-radius:9px;display:grid;gap:3px}
+#nm-site-header .nm-menu a{display:block;padding:11px 10px;text-decoration:none;font:600 13px Arial,sans-serif;color:#302b27;border-radius:5px}
+#nm-site-header .nm-links .nm-action{background:#6e302a;color:#fff!important;padding:12px 15px;border-radius:5px}
+#nm-site-header .nm-links .nm-whatsapp{background:#d6a35d;color:#1d1b17!important}
+#nm-site-header .nm-toggle{display:none;background:transparent;border:1px solid #d5c6b4;border-radius:5px;padding:8px 12px;font-size:24px;color:#29241e;cursor:pointer}
+#nm-site-footer{background:#202731;color:#f8f1e8;padding:45px 25px 22px}
+#nm-site-footer .nm-footer-wrap{max-width:1320px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+#nm-site-footer h2{font:700 23px Georgia,serif;margin:0 0 12px;color:#fff4df}
+#nm-site-footer h3{font:700 15px Arial,sans-serif;margin:0 0 15px;color:#e9c496}
+#nm-site-footer p{font:15px/1.7 Arial,sans-serif;color:#e2dfda;margin:0 0 12px}
+#nm-site-footer a{display:block;font:14px/1.9 Arial,sans-serif;color:#eee4d8;text-decoration:none}
+#nm-site-footer a:hover{text-decoration:underline}
+#nm-site-footer .nm-copyright{max-width:1320px;margin:28px auto 0;border-top:1px solid #ffffff30;padding-top:18px;font:12px Arial,sans-serif;color:#bcb9b3}
+@media(max-width:1050px){#nm-site-header .nm-nav{flex-wrap:wrap}#nm-site-header .nm-toggle{display:block;margin-left:auto}#nm-site-header .nm-links{display:none;flex:0 0 100%;flex-direction:column;align-items:stretch;gap:0;padding:10px 0}#nm-site-header .nm-links.nm-open{display:flex}#nm-site-header .nm-links>a,#nm-site-header .nm-dropdown>summary{display:block;padding:12px 8px}#nm-site-header .nm-menu{position:static;box-shadow:none;min-width:0;margin:0 0 8px 10px}#nm-site-header .nm-links .nm-action{margin:6px 0;text-align:center}#nm-site-footer .nm-footer-wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){#nm-site-header .nm-nav{padding:12px 17px}#nm-site-header .nm-brand{font-size:16px}#nm-site-header .nm-logo{width:43px;height:43px}#nm-site-header .nm-brand small{font-size:10px}#nm-site-footer .nm-footer-wrap{grid-template-columns:1fr}}
